@@ -1,0 +1,65 @@
+@import "../../sass/mixin";
+@import "../../sass/animations";
+
+.contacts {
+
+}
+
+
+.contacts__title-char {
+  transition: all .5s;
+  display: inline-table;
+
+  &:nth-child(11) {
+    visibility: hidden;
+  }
+
+}
+
+.contacts__title-description {
+  width: 80%;
+  text-align: left;
+  font-size: 20px;
+  color: rgba(255,255,255, .5);
+
+  & p {
+    margin: 15px 0;
+  }
+}
+
+.contacts__title-anim:hover {
+  color: #6c3;
+  animation: text-transform 1s;
+}
+
+.contacts__title-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  & input,
+  & textarea {
+    margin: 15px 0;
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  & #name,
+  & #email {
+    width: 48%;
+  }
+
+  & #subject {
+    width: 100%;
+  }
+
+  & #message {
+    width: 100%;
+  }
+
+  & #submit {
+    display: flex;
+  }
+}

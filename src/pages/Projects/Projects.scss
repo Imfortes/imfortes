@@ -1,0 +1,30 @@
+@import "../../sass/mixin";
+@import "../../sass/animations";
+
+
+.about {
+
+}
+
+
+.projects__title-char {
+  transition: all .5s;
+  display: inline-table;
+
+}
+
+.projects__title-description {
+  width: 80%;
+  text-align: left;
+  font-size: 20px;
+  color: rgba(255,255,255, .5);
+
+  & p {
+    margin: 15px 0;
+  }
+}
+
+.projects__title-anim:hover {
+  color: #6c3;
+  animation: text-transform 1s;
+}

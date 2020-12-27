@@ -1,0 +1,106 @@
+@import "./mixin";
+@import "../components/Header/Header";
+@import "../pages/Home/Home";
+@import "../pages/About/About";
+@import "../pages/Skills/Skills";
+@import "../pages/Projects/Projects";
+@import "../pages/Contacts/Contacts";
+
+$main-color: #6c3;
+
+@font-face {
+  font-family: 'Redressed', cursive;
+  src: local('Redressed'), url("../fonts/Redressed-Regular.ttf");
+}
+
+*{
+  font-family: 'Redressed', cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: $main-color;
+  text-decoration: none;
+  transition: .8s;
+}
+
+hr {
+  width: 80%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-color: $main-color;
+}
+
+ul{
+  list-style: none;
+}
+
+input {
+  @include display-flex-center;
+  align-items: center;
+  height: 65px;
+  transition: .8s;
+}
+
+.main {
+  background-color: #070707;
+  color: #ffffff;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  height: calc(100vh - 50px);
+}
+
+.main-title {
+  font-size: 54px;
+  cursor: default;
+}
+
+.main-btn {
+  @include display-flex-center;
+  width: 125px;
+  margin-top: 50px;
+  padding: 15px;
+  border: 1px solid;
+
+  &:hover {
+    background-color: $main-color;
+    color: #070707;
+    border: 1px solid #070707;
+  }
+}
+
+#submit {
+  background-color: #070707;
+  color: $main-color;
+  text-decoration: none;
+  transition: .5s;
+
+  &:hover {
+    background-color: $main-color;
+    color: #070707;
+    border: 1px solid #070707;
+  }
+}
+
+.home,
+.about,
+.skills,
+.projects,
+.contacts {
+  @include container;
+}
+
+.home__title,
+.home__animation,
+.about__title,
+.skills__title,
+.projects__title,
+.contacts__title {
+  @include left-right-blocks;
+}
+
+

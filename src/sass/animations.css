@@ -1,0 +1,33 @@
+@keyframes circle-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes text-transform {
+  0% {
+    transform: scale(1);
+  }
+  15% {
+    transform: scale(0.8);
+  }
+  30% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(5px);
+  }
+  85% {
+    transform: scale(1.2);
+  }
+  99% {
+    transform: scale(1);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/*# sourceMappingURL=animations.css.map */

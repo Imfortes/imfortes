@@ -1,0 +1,40 @@
+@import "../../sass/mixin";
+@import "../../sass/animations";
+
+
+.skills {
+
+}
+
+
+.skills__title-char {
+  transition: all .5s;
+  display: inline-table;
+
+
+  &:nth-child(7),
+  &:nth-child(9) {
+    visibility: hidden;
+  }
+}
+
+.skills__title-anim {
+  font-size: 54px;
+  cursor: default;
+}
+
+.skills__title-description {
+  width: 80%;
+  text-align: left;
+  font-size: 20px;
+  color: rgba(255,255,255, .5);
+
+  & p {
+    margin: 15px 0;
+  }
+}
+
+.skills__title-anim:hover {
+  color: #6c3;
+  animation: text-transform 1s;
+}

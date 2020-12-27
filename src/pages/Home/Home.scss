@@ -1,0 +1,90 @@
+@import "../../sass/mixin";
+@import "../../sass/animations";
+
+.home__title {
+  @include display-flex-start;
+  flex-direction: column;
+
+  & hr {
+    width: 100%;
+  }
+}
+
+.home__animation {
+  @include display-flex-end;
+}
+
+.home__animation-circle {
+  width: 300px;
+  height: 300px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #6c3;
+  position: relative;
+  animation: circle-rotate 10s linear infinite;
+}
+
+.home__animation-circle:first-child {
+  margin-right: 30px;
+}
+.home__animation-circle:last-child {
+  margin-left: 30px;
+}
+
+.home__animation-circle:first-child:before {
+  @include home__animation-circle;
+  top: 50%;
+  left: -5px;
+}
+
+.home__animation-circle:first-child:after {
+  @include home__animation-circle;
+  top: 50%;
+  right: -5px;
+}
+
+.home__animation-circle:last-child:before {
+  @include home__animation-circle;
+  top: -5px;
+  left: 50%;
+}
+
+.home__animation-circle:last-child:after {
+  @include home__animation-circle;
+  bottom: -5px;
+  left: 50%;
+}
+
+.home__title-char {
+  transition: all .5s;
+  display: inline-table;
+
+  &:nth-child(16),
+  &:nth-child(26),
+  &:nth-child(41),
+  &:nth-child(61),
+  &:nth-child(65),
+  &:nth-child(75),
+  &:nth-child(77),
+  &:nth-child(87) {
+    visibility: hidden;
+  }
+}
+
+.home__title-description {
+  font-size: 20px;
+  color: rgba(255,255,255, .5);
+}
+
+.home__title-anim:hover {
+  color: #6c3;
+  animation: text-transform 1s;
+}
+
+.home__title-feedback {
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,55 @@
+@keyframes circle-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes text-transform {
+  0% {
+    transform: scale(1);
+  }
+  15% {
+    transform: scale(0.8);
+  }
+  30% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(5px);
+  }
+  85% {
+    transform: scale(1.2);
+  }
+  99% {
+    transform: scale(1);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.contacts__title-char {
+  transition: all 0.5s;
+  display: inline-table;
+}
+.contacts__title-char:nth-child(10) {
+  visibility: hidden;
+}
+
+.contacts__title-description {
+  width: 80%;
+  text-align: left;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.contacts__title-description p {
+  margin: 15px 0;
+}
+
+.contacts__title-anim:hover {
+  color: #6c3;
+  animation: text-transform 1s;
+}
+
+/*# sourceMappingURL=Contacts.css.map */
